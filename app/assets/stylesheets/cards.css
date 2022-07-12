@@ -1,0 +1,11 @@
+.card {
+  margin: 5px;
+  max-height: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card > img {
+  height: 150px;
+  max-height: 150px;
+}
