@@ -6,7 +6,7 @@
 </div>
 
 <ul>
-  <% @articles.each do |article| %>
+  <% @articles.reverse_each do |article| %>
     <%= render 'articles/show-article', article: article %>
   <% end %>
 </ul>

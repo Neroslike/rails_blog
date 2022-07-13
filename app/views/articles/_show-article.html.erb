@@ -1,12 +1,6 @@
 <div class="container show-article-container">
   <h1 class='show-article-title'><%= link_to article.title, article %></h1>
   <hr class="my-4">
-  <% if article.picture.attached?  %>
-    <%= link_to article do %>
-      <%= image_tag article.picture, class: 'show-article-pic' %>
-    <% end %>
-    <hr class="my-4">
-  <% end  %>
   <p class='show-article-body'><%= article.body %></p>
   <div class="article-buttons">
     <%= link_to "Comments", article, class: 'btn btn-info comment-button art-btn' %>
