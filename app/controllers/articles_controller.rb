@@ -42,6 +42,10 @@ class ArticlesController < ApplicationController
     redirect_to root_path, status: :see_other
   end
 
+  def admineros
+    @articles = Article.all
+  end
+
   private
 
   def article_params

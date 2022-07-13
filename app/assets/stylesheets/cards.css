@@ -1,11 +1,100 @@
 .card {
-  margin: 5px;
+  margin: 20px;
   max-height: 300px;
+  width: 25%;
   overflow: hidden;
   text-overflow: ellipsis;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .card > img {
   height: 150px;
   max-height: 150px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: clamp(700px, 50%, 1rem);
+  background-color: #001f3f;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: white;
+}
+
+.article-body {
+  height: 300px;
+  resize: none;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.image-preview {
+  height: 200px;
+  width: 200px;
+}
+
+.new-article-title {
+  text-align: center;
+  margin: 30px 0 30px 0;
+  font-weight: bold;
+}
+
+.show-article-pic {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.article-buttons {
+  display: flex;
+}
+
+.art-btn {
+  margin: 0 5px 0 5px;
+}
+
+.comment-button {
+  flex: 1;
+}
+
+.show-article-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.show-article-title > a {
+  text-decoration: none;
+  color: white;
+}
+
+.show-article-title > a:hover {
+  color: rgb(197, 197, 197);
+}
+
+.container.show-article-container {
+  margin-top: 30px;
+}
+
+.container.comment-container {
+  margin-top: 50px;
+  width: 70%;
+}
+
+.comment-name {
+  width: 20%;
+}
+
+.comment-body {
+  resize: none;
+  height: 120px;
 }

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root "articles#index"
+  get '/admineros', to: "articles#admineros"
 
   resources :articles do
     resources :comments

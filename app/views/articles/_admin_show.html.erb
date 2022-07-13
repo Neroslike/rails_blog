@@ -1,0 +1,19 @@
+<div class="container show-article-container">
+  <h1 class='show-article-title'><%= link_to article.title, article %></h1>
+  <hr class="my-4">
+  <% if article.picture.attached?  %>
+    <%= link_to article do %>
+      <%= image_tag article.picture, class: 'show-article-pic' %>
+    <% end %>
+    <hr class="my-4">
+  <% end  %>
+  <p class='show-article-body'><%= article.body %></p>
+  <div class="article-buttons">
+    <%= link_to "Edit", edit_article_path(article), class: 'btn btn-primary art-btn' %>
+    <%= link_to "Destroy", article_path(article), class: 'btn btn-danger art-btn' , data: {
+                      turbo_method: :delete,
+                      turbo_confirm: "Are you sure?"
+                    } %>
+    <%= link_to "Comments", article, class: 'btn btn-info comment-button art-btn' %>
+  </div>
+</div>
